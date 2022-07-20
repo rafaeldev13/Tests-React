@@ -40,8 +40,8 @@ describe('Teste o componente <Pokedex.js />', () => {
   it('Teste se a Pokédex contém um botão para resetar o filtro', () => {
     render(<MemoryRouter><App /></MemoryRouter>);
 
-    const psychicBttn = screen.getByText('Psychic');
-    userEvent.click(psychicBttn);
+    const button1 = screen.getByText('Psychic');
+    userEvent.click(button1);
 
     const resetBttn = screen.getByText('All');
     userEvent.click(resetBttn);
